@@ -8,6 +8,7 @@ var {
     requireNativeComponent,
     View,
     UIManager,
+    ViewPropTypes,
     DeviceEventEmitter
 } = ReactNative;
 
@@ -89,7 +90,7 @@ class SignatureCapture extends React.Component {
 }
 
 SignatureCapture.propTypes = {
-  ...View.propTypes,
+  ...ViewPropTypes,
     rotateClockwise: PropTypes.bool,
     square: PropTypes.bool,
     saveImageFileInExtStorage: PropTypes.bool,
